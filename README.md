@@ -2,9 +2,9 @@
 ---
 ## This repository contains a tutorial on the three following data structures:
 
-### [Queue](https://www.example.com)
-### [Linkedlist](https://www.example.com)
-### [Trees](https://www.example.com)
+### [Queue](https://github.com/joehawkens/data-structures-final/blob/main/1-Queue.md)
+### [Linkedlist](https://github.com/joehawkens/data-structures-final/blob/main/2-Linkedlist.md)
+### [Trees](https://github.com/joehawkens/data-structures-final/blob/main/3-Trees.md)
 ---
 
 # Each tutorial module will be formatted as follows

@@ -11,10 +11,10 @@
 
 ### •	Data Structure Name
 ### •	Description
-### -	Purpose, common errors
+###     	- Purpose, common errors
 ### •	Diagram/Photo
 ### •	Documentation and Big-O speed complexity
-### -	When to use the data structure, Performance
+###       - When to use the data structure, Performance
 ### •	Completed example code problem
 ### •	Incomplete example code w/ tests
 

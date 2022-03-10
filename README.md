@@ -7,15 +7,15 @@
 ### [Trees](https://github.com/joehawkens/data-structures-final/blob/main/3-Trees.md)
 ---
 
-# Each tutorial module will be formatted as follows
+## Each tutorial module will be formatted as follows
 
-## Data Structure Name
+### Data Structure Name
 - Description
     - Purpose, common errors
-### Diagram/Photo
-### Documentation and Big-O speed complexity
+#### Diagram/Photo
+#### Documentation and Big-O speed complexity
 - When to use the data structure, Performance
-### Completed example code problem
-### Incomplete example code w/ tests
+#### Completed example code problem
+#### Incomplete example code w/ tests
 
 ---

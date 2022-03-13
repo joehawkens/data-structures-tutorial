@@ -9,7 +9,7 @@
 
 ## Each tutorial module will be formatted as follows
 
-### Data Structure Name
+#### Data Structure Name
 - Description
 - Purpose, common errors
 #### Diagram/Photo

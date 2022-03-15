@@ -4,7 +4,7 @@ Incomplete example code w/ tests
 #### Data structures are a way to structure data. Some Data Structures work better than others depending on the problem you're solving.
 
 
-# Queues [What is it?]
+# Queue [What is it?]
 
 ### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. When something is added, it starts in the back.
 ### Each customer is served when they reach the checkout counter (the front) and is then removed from the Queue.
@@ -27,7 +27,15 @@ Find size (Size):      size = len(queue)
 
 ## Implementation [When to use it]:
 
-### How to use it: This data strucutre is effective when you need to make a "line" in a Software application. For instance, if you wanted to
+### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they simply wouldn't be as fast or effective. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
+Access | Search | Insertion | Deletion |
+----------------------------------------
+ O(n)  |  O(n)  |   O(1)    |    O(1)  |
+
+###
+
+
+## Example Problem [Example]:
 
 ## Apply what you learned [Practice]:

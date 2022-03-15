@@ -6,8 +6,7 @@ Incomplete example code w/ tests
 
 # Queue [What is it?]
 
-### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. When something is added, it starts in the back.
-### Each customer is served when they reach the checkout counter (the front) and is then removed from the Queue.
+### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you exit from the front.
 
 ![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 

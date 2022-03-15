@@ -30,7 +30,7 @@ Find size (Size):      size = len(queue)
 ### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they simply wouldn't be as fast or effective. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
 Access | Search | Insertion | Deletion |
-----------------------------------------
+-------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
 
 ###

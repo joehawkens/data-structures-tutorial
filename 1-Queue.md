@@ -1,17 +1,17 @@
-Big-O speed complexity
 Completed example code problem
 Incomplete example code w/ tests
 
 #### Data structures are a way to structure data. Some Data Structures work better than others depending on the problem you're solving.
 
 
-# Queues
+# Queue [What is it?]
 
-### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. Each customer is served when they reach the checkout counter (the front). When something is added, it starts in the back.
+### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. When something is added, it starts in the back.
+### Each customer is served when they reach the checkout counter (the front) and is then removed from the Queue.
 
-![A Queue compared to a line](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
+![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
-## Documentation
+## Documentation [How to use it]
 
 ### In the Python programming language, a Queue is implemented as a list, so if you wanted to make a Queue you'd simply make a list...
 ```
@@ -25,35 +25,48 @@ Find size (Size):      size = len(queue)
 ``` 
 
 
-## Purpose:
+## Implementation [When to use it]:
 
-### This data strucutre is effective when you need to make a line in Software. But what would that look like? Let's say a phone company decides to release a new smartphone at midnight, the demand for this phone is very high, but unfortunately, there's only limited supply due to a battery shortage (only 500 available). The company is expecting way more orders than there are supplies, so how do they choose who gets a phone and who doesn't? The same way a fast food drive-through chooses who's order is going to be cooked. A queue! (a line). That way, instead of deciding on behalf of thousands of customers, you let them decide for themselves if they're going to stay up until midnight and make a pre-order to get a spot in the queue. In software you make a program that takes orders(data) and inserts them into a queue based on the time they made the order. When the first 500 orders are made, you can assign each one based off their position in the queue. It would look a little something like this:
+### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they simply wouldn't be as fast or effective. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
-```
-def smartphone_queue():
+Access | Search | Insertion | Deletion |
+-------|--------|-----------|----------|
+ O(n)  |  O(n)  |   O(1)    |    O(1)  |
 
-    customers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] - Represents 20 customers
-    smartphone_orders = [] - Represents a list of customers that made pre-orders
+## [Example]:
+### Let's see what this looks like with an example problem.
 
-
-    This for loop 
-    for customer in random_customers:
-
-        fast_customer = random.choice(random_customers) 
-        random_customers.remove(fast_customer)
-        smartphone_orders.append(fast_customer) 
-
-
-
-    return smartphone_orders
-
-
-# Output: [14, 15, 16, 9, 19, 1, 11, 10, 6, 18] 
-
-This represents the customers that stayed up late to make sure
-they can process a pre-order before anyone else.
+### Scenario: You're creating a program that manages help desk tickets for the IT department. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
 
 ```
+tickets = []
 
 
-## Apply what you learned:
+def submit_helpdesk_ticket(problem): #A function that recieves help desk tickets and assigns them a spot in the queue.
+
+    tickets.append(problem)
+
+
+def show_helpdesk_tickets():
+
+    return tickets
+
+
+#TESTS ===============
+submit_helpdesk_ticket('server_12')
+submit_helpdesk_ticket('server_6')
+submit_helpdesk_ticket('server_30')
+submit_helpdesk_ticket('server_1')
+submit_helpdesk_ticket('server_19')
+
+print('====================================\n')
+print('The following servers need repairs:')
+print(show_helpdesk_tickets())
+print('\n====================================')
+
+#Expected output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19']
+#=====================
+
+
+```
+## Apply what you learned [Practice]:

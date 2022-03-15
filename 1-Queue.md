@@ -36,7 +36,7 @@ Access | Search | Insertion | Deletion |
 ## [Example]:
 ### Let's see what this looks like with an example problem.
 
-### Scemario: You're creating a program that manages help desk tickets for the IT department. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre in your program...
+### Scenario: You're creating a program that manages help desk tickets for the IT department. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
 
 ```
 tickets = []

@@ -67,9 +67,15 @@ print('\n====================================')
 ```
 ### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see server 12 and server 19 were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
 
+# Apply what you've learned [Practice]:
+
+### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a pre-order campaign so customers can sign up as shipments are re-supplied.
+### However, the programmer that created the sign-up for shipments forgot to implement the Queue data structure and now all the orders are set to randomly process instead of in-order. Your job is to fix this problem and succesfully implement the Queue to fix this problem...
+
+```
 
 
-## Apply what you've learned [Practice]:
-### Now let's try to apply what you've learned.
 
-### Scenario: 
+```
+
+

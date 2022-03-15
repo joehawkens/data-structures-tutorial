@@ -19,6 +19,12 @@ queue = []
 
 ```
 ### If you wanted to add, remove, or find within this list, you'd use the following syntax...
+```
+ADDING ITEMS:      queue.append(item)
+REMOVING ITEMS:    queue.remove(item)    
+FINDING ITEMS:     queue[index]
+
+```
 
 
 ## Purpose:

@@ -69,6 +69,7 @@ print('\n====================================')
 
 
 
-## Apply what you learned [Practice]:
+## Apply what you've learned [Practice]:
 ### Now let's try to apply what you've learned.
+
 ### Scenario: 

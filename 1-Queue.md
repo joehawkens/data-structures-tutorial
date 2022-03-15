@@ -7,9 +7,9 @@ Incomplete example code w/ tests
 
 # Queues
 
-### Queues can be thought of as a line at a fast food drive-through. Where the cars represent the data being structured. Each car is served when they reach the order window (the front). When data is added to this structure, it is added in the back of the line, exactly the same way as a drive-through.
+### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. Each cusomer is served when they reach the checkout counter (the front). When data is added to this structure, it is added in the back of the line, exactly the same way as the line:
 
-![Comparing Queues to a real world situation](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
+![A Queue compared to a line](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
 ## Purpose:
 

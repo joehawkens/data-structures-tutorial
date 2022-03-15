@@ -52,20 +52,23 @@ def show_helpdesk_tickets():
 
 
 #TESTS ===============
-submit_helpdesk_ticket('server_12')
+submit_helpdesk_ticket('server_12') # The first ticket issued.
 submit_helpdesk_ticket('server_6')
 submit_helpdesk_ticket('server_30')
 submit_helpdesk_ticket('server_1')
-submit_helpdesk_ticket('server_19')
+submit_helpdesk_ticket('server_19') # The last ticket issued.
 
 print('====================================\n')
 print('The following servers need repairs:')
 print(show_helpdesk_tickets())
 print('\n====================================')
-
-#Expected output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19']
-#=====================
-
-
+# Output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19'] 
+# Notice the placement of server_12 and server_19.
 ```
+### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see server 12 and server 19 were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
+
+
+
 ## Apply what you learned [Practice]:
+### Now let's try to apply what you've learned.
+### Scenario: 

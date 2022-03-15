@@ -33,9 +33,40 @@ Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
 
-###
+## [Example]:
+### Let's see what this looks like with an example problem.
+
+### Scemario: You're creating a program that manages help desk tickets for the IT department. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre in your program...
+
+```
+tickets = []
 
 
-## Example Problem [Example]:
+def submit_helpdesk_ticket(problem): #A function that recieves help desk tickets and assigns them a spot in the queue.
 
+    tickets.append(problem)
+
+
+def show_helpdesk_tickets():
+
+    return tickets
+
+
+#TESTS ===============
+submit_helpdesk_ticket('server_12')
+submit_helpdesk_ticket('server_6')
+submit_helpdesk_ticket('server_30')
+submit_helpdesk_ticket('server_1')
+submit_helpdesk_ticket('server_19')
+
+print('====================================\n')
+print('The following servers need repairs:')
+print(show_helpdesk_tickets())
+print('\n====================================')
+
+#Expected output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19']
+#=====================
+
+
+```
 ## Apply what you learned [Practice]:

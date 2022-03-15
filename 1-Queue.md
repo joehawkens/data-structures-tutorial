@@ -7,7 +7,7 @@ Incomplete example code w/ tests
 
 # Queues
 
-### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. Each customer is served when they reach the checkout counter (the front). When data is added to this structure, it is added in the back of the line, exactly the same way as the line:
+### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. Each customer is served when they reach the checkout counter (the front). When something is added, it starts in the back.
 
 ![A Queue compared to a line](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
@@ -16,15 +16,13 @@ Incomplete example code w/ tests
 ### In the Python programming language, a Queue is implemented as a list, so if you wanted to make a Queue you'd simply make a list...
 ```
 queue = []
-
 ```
-### If you wanted to add, remove, or find within this list, you'd use the following syntax...
+### Common operations assosciated with the Queue...
 ```
-ADDING ITEMS:      queue.append(item)
-REMOVING ITEMS:    queue.remove(item)    
-FINDING ITEMS:     queue[index]
-
-```
+Adding (Enqueue):      queue.append(item)
+Removing (Dequeue):    queue.remove[0] OR queue.pop(0)    
+Find size (Size):      size = len(queue)
+``` 
 
 
 ## Purpose:

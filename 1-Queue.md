@@ -20,7 +20,7 @@ Find size (Size):      size = len(queue)
 
 ## Implementation [When to use it]:
 
-### You implement Queues when the order of data matters in a problem. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
+### You implement Queues when the order of data matters in a problem. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, Insertion and Deletion with a Queues boasts an impressive speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|

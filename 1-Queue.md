@@ -20,7 +20,7 @@ Find size (Size):      size = len(queue)
 
 ## Implementation [When to use it]:
 
-### You implement Queues when the order of data matters in a problem. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, Insertion and Deletion with a Queues boasts an impressive speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
+### You implement Queues when the order of data matters in a problem. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, Insertion and Deletion with a Queue boasts an impressive O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
@@ -63,7 +63,7 @@ print(show_helpdesk_tickets())
 # [Practice]:
 
 ### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a preorder campaign so customers can sign up as shipments are resupplied.
-### However, the programmer that created the sign-up for shipments used a dictionary to order the data instead of a list. This makes the operations inefficient as a dictionary has a Big-O of O(n) for Insertion and Deletion, as opposed to O(1) for Queues.
+### However, the programmer that created the backend code for preorders used a dictionary to order the data instead of a list. Although this can work as a solution this makes the operations inefficient as a dictionary has a speed of O(n) for Insertion and Deletion, as opposed to O(1) for Queues.
 
 ```
 #Scenario: Previous programmer didn't integrate a Queue structure into the preorder process...Instead they used a dictionary.
@@ -71,7 +71,7 @@ print(show_helpdesk_tickets())
 #       1. Transfer existing customers from the dictionary into a list.
 #       2. Create a funciton that can add future customers into the Queue.
 
-#==============================================================================
+#===================================DICTIONARY===========================================
 
 customers = {
 
@@ -107,12 +107,12 @@ def add_customer_to_dictionary(name): #Adds customer to dictionary.
     amount = len(customers) + 1
     customers[amount] = name
 
-#=============================================================================
+#==================================QUEUE===========================================
 
 
 queue = []
 
-def add_value_into_queue(key): #Transfer existing customers from dictionary into the queue through this function...
+def add_values_into_queue(dictionary): #Transfer existing customers from dictionary into the queue through this function...
 
     pass
 
@@ -124,18 +124,46 @@ def show_customers():
 
     return queue
 
+
+
+
 #=====TESTS========================================================
 add_customer_to_dictionary("Shelby")#Adds a customer to the dictionary.
 add_customer_to_dictionary("Ryan")
 add_customer_to_dictionary("Louis")
 
+add_values_into_queue(customers)
 add_customer_queue('Reggie')
 add_customer_queue('Dominic')
 add_customer_queue('Lola')
 
 print(show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
-#=====TESTS========================================================
+#==================================================================
 
+
+
+
+
+
+
+
+
+#========================================================SOLUTION===========================================================
+
+# queue = []
+
+# def add_values_into_queue(dictionary):
+
+#     for key in dictionary:
+
+#         value = dictionary.get(key)
+#         queue.append(value)
+
+#     print(test_dic)
+
+# def add_customer_queue(name):
+
+#     queue.append(name)
 ```
 
 

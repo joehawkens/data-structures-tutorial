@@ -1,9 +1,3 @@
-Completed example code problem
-Incomplete example code w/ tests
-
-#### Data structures are a way to structure data. Some Data Structures work better than others depending on the problem you're solving.
-
-
 # Queue [What is it?]
 
 ### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you exit from the front.

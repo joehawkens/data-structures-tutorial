@@ -1,8 +1,8 @@
 # Linked List [What is it?]
 
-### ...
+### A linked list structures data inside nodes that connect to each other through pointers. If you've ever played with a Barrel of Monkeys, the idea is very similar. A monkey represents a node of data and the arms of the monkey represents the pointers of the node, "pointing" or referencing to the next and previous nodes. Each node can only point to the one behind them and the one in front of them, much like how a monkey can only connect to two others maximum. The head and tail of the linked list is where you're able to access the data within the structure, giving you a starting point that references down the line toward the end or the front. - Also Monkeys have tails too, but that has nothing to do with what we're talking about.
 
-![Photo](link)
+![Photo](https://github.com/joehawkens/data-structures-final/blob/main/Assets/LinkedlistDiagram.PNG)
 
 # Documentation [How to use it?]
 

@@ -6,8 +6,7 @@ Incomplete example code w/ tests
 
 # Queue [What is it?]
 
-### Queues can be thought of as a line of customers at a grocery store. Where the customers represent the data being structured. When something is added, it starts in the back.
-### Each customer is served when they reach the checkout counter (the front) and is then removed from the Queue.
+### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you exit from the front.
 
 ![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
@@ -27,7 +26,7 @@ Find size (Size):      size = len(queue)
 
 ## Implementation [When to use it]:
 
-### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they simply wouldn't be as fast or effective. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
+### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
@@ -36,7 +35,7 @@ Access | Search | Insertion | Deletion |
 ## [Example]:
 ### Let's see what this looks like with an example problem.
 
-### Scenario: You're creating a program that manages help desk tickets for the IT department. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
+### Scenario: The IT department at your University needs to a software application that lets them recieve help desk tickets around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
 
 ```
 tickets = []
@@ -53,20 +52,30 @@ def show_helpdesk_tickets():
 
 
 #TESTS ===============
-submit_helpdesk_ticket('server_12')
+submit_helpdesk_ticket('server_12') # The first ticket issued.
 submit_helpdesk_ticket('server_6')
 submit_helpdesk_ticket('server_30')
 submit_helpdesk_ticket('server_1')
-submit_helpdesk_ticket('server_19')
+submit_helpdesk_ticket('server_19') # The last ticket issued.
 
 print('====================================\n')
 print('The following servers need repairs:')
 print(show_helpdesk_tickets())
 print('\n====================================')
+# Output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19'] 
+# Notice the placement of server_12 and server_19.
+```
+### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see server 12 and server 19 were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
 
-#Expected output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19']
-#=====================
+# Apply what you've learned [Practice]:
+
+### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a pre-order campaign so customers can sign up as shipments are re-supplied.
+### However, the programmer that created the sign-up for shipments forgot to implement the Queue data structure and now all the orders are set to randomly process instead of in-order. Your job is to fix this problem and succesfully implement a Queue.
+
+```
+
 
 
 ```
-## Apply what you learned [Practice]:
+
+

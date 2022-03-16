@@ -67,7 +67,7 @@ print('The next location that needs assistance: ')
 print(ticket_object.show_next_ticket()) #Shows the first ticket in Queue.
 
 
-print('The following locations need assistance:')
+print('The following locations need assistance:') #Shows the rest of the tickets ini Queue.
 print(ticket_object.show_helpdesk_tickets())
 print('\n====================================')
 # Output: 
@@ -78,7 +78,7 @@ The following locations need assistance:
 
 Notice the placement of 'STC111' and 'MC107'
 ```
-### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list. The first ticket being shown by the show_next_ticket() function, which grabs the first in the Queue and displays it.
+### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list. The first ticket is being shown by the show_next_ticket() function, which grabs the first in the Queue and displays it.
 
 # [Practice]:
 

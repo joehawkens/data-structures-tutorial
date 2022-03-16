@@ -1,6 +1,6 @@
 # Queue [What is it?]
 
-### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you exit from the front.
+### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you leave from the front.
 
 ![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 

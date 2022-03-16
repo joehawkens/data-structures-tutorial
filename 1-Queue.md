@@ -82,6 +82,8 @@ Notice the placement of 'STC111' and 'MC107'
 
 # Practice:
 
+### Try this practice by implementing a Queue yourself. The solution to the problem is located at the bottom.
+
 ### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a preorder campaign so customers can sign up as shipments are resupplied.
 ### However, the programmer that created the backend code for preorders used a dictionary to order the data instead of a list. Although this can work as a solution this makes the operations inefficient as a dictionary has a speed of O(n) for Insertion and Deletion, as opposed to O(1) for Queues.
 

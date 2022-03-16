@@ -173,5 +173,7 @@ print(show_customers())
 ## Key Takeaways:
 
 > In the Python programming language, a Queue is implemented as a list.
-> How to know when to implement Queues? >You implement Queues when the way data is ordered is important.
+
+> How to know when to implement Queues? You implement Queues when the way data is ordered is important.
+
 > Queues have fast speeds when it comes to adding and removing elements.

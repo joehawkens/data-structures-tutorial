@@ -26,7 +26,7 @@ Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
 
-## [Example]:
+# [Example]:
 ### Let's see what this looks like with an example problem.
 
 ### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data structure into the design...
@@ -60,7 +60,7 @@ print(show_helpdesk_tickets())
 ```
 ### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list.
 
-# Apply what you've learned [Practice]:
+# [Practice]:
 
 ### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a preorder campaign so customers can sign up as shipments are resupplied.
 ### However, the programmer that created the sign-up for shipments used a dictionary to order the data instead of a list. This makes the operations inefficient as a dictionary has a Big-O of O(n) for Insertion and Deletion, as opposed to O(1) for Queues (lists).

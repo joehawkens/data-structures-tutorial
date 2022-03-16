@@ -4,7 +4,7 @@
 
 ![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
-## Documentation [How to use it?]
+# Documentation [How to use it?]
 
 ### In the Python programming language, a Queue is implemented as a list, so if you wanted to make a Queue you'd simply make a list...
 ```
@@ -18,7 +18,7 @@ Find size (Size):      size = len(queue)
 ``` 
 
 
-## Implementation [When to use it?]:
+# Implementation [When to use it?]:
 
 ### You implement Queues when the way data is ordered is important. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, Insertion and Deletion with a Queue boasts an impressive O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 

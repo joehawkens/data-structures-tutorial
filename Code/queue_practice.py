@@ -1,7 +1,9 @@
-#Scenario: Previous programmer didn't integrate a Queue structure into the order process...Instead he used a dictionary.
-#Implement the Queue by adding the customers to the queue from the Dictionary and 
+#Scenario: Previous programmer didn't integrate a Queue structure into the preorder process...Instead they used a dictionary.
+#Implement the Queue by doing the following:
+#       1. Transfer existing customers from the dictionary into a list.
+#       2. Create a funciton that can add future customers into the Queue.
 
-queue = []
+#===================================DICTIONARY===========================================
 
 customers = {
 
@@ -37,10 +39,24 @@ def add_customer_to_dictionary(name): #Adds customer to dictionary.
     amount = len(customers) + 1
     customers[amount] = name
 
+#==================================QUEUE===========================================
 
-def add_customer_to_queue():
+
+queue = []
+
+def add_values_into_queue(dictionary): #Transfer existing customers from dictionary into the queue through this function...
 
     pass
+
+def add_customer_queue(name): #Let this function add future customers into the Queue.
+
+    pass
+
+def show_customers():
+
+    return queue
+
+
 
 
 #=====TESTS========================================================
@@ -48,8 +64,35 @@ add_customer_to_dictionary("Shelby")#Adds a customer to the dictionary.
 add_customer_to_dictionary("Ryan")
 add_customer_to_dictionary("Louis")
 
+add_values_into_queue(customers)
+add_customer_queue('Reggie')
+add_customer_queue('Dominic')
+add_customer_queue('Lola')
+
+print(show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
+#==================================================================
 
 
-#=====TESTS========================================================
 
 
+
+
+
+
+
+#========================================================SOLUTION===========================================================
+
+# queue = []
+
+# def add_values_into_queue(dictionary):
+
+#     for key in dictionary:
+
+#         value = dictionary.get(key)
+#         queue.append(value)
+
+#     print(test_dic)
+
+# def add_customer_queue(name):
+
+#     queue.append(name)

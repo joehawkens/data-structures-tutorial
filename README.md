@@ -15,3 +15,8 @@
 
 ### 4. Completed example code problem
 ### 5. Incomplete example code problem
+
+---
+### For any questions contact Joseph Hawkins
+### Class: CSE-212, Section 4
+### Email: hawkins@byui.edu 

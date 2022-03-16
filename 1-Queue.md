@@ -63,7 +63,7 @@ print(show_helpdesk_tickets())
 # [Practice]:
 
 ### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a preorder campaign so customers can sign up as shipments are resupplied.
-### However, the programmer that created the sign-up for shipments used a dictionary to order the data instead of a list. This makes the operations inefficient as a dictionary has a Big-O of O(n) for Insertion and Deletion, as opposed to O(1) for Queues.
+### However, the programmer that created the backend code for preorders used a dictionary to order the data instead of a list. Although this can work as a solution this makes the operations inefficient as a dictionary has a speed of O(n) for Insertion and Deletion, as opposed to O(1) for Queues.
 
 ```
 #Scenario: Previous programmer didn't integrate a Queue structure into the preorder process...Instead they used a dictionary.

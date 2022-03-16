@@ -162,7 +162,16 @@ new_queue.add_customer_queue('Reggie')
 new_queue.add_customer_queue('Dominic')
 new_queue.add_customer_queue('Lola')
 
-print(show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
+print(show_customers()) 
+#Expected output: 
+['Rob', 'Kelly', 'Anna', 'Katie', 'Peter', 'Joshua', 'Karen', 'Ignacio', 'Johann', 'Frank', 'Derrin', 'Sarah', 'Jake', 'Meagan', 'Richard', 'Manny', 'Sam', 'Matthew', 'Maria', 'Jessica', 'Shelby', 'Ryan', 'Louis', 'Reggie', 'Dominic', 'Lola']
+
+
 #==================================================================
 ```
 
+## Key Takeaways:
+
+> In the Python programming language, a Queue is implemented as a list.
+> How to know when to implement Queues? >You implement Queues when the way data is ordered is important.
+> Queues have fast speeds when it comes to adding and removing elements.

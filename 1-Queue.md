@@ -31,34 +31,54 @@ Access | Search | Insertion | Deletion |
 
 ### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data structure into the design...
 ```
-tickets = []
+class Queue():
+
+    def __init__(self):
+
+        self.tickets = []
 
 
-def submit_helpdesk_ticket(location): #A function that recieves help desk tickets by location and assigns them a spot in the queue.
+    def submit_helpdesk_ticket(self, location): #A function that recieves help desk tickets and assigns them a spot in the queue.
 
-    tickets.append(location)
-
-
-def show_helpdesk_tickets():
-
-    return tickets
+        self.tickets.append(location)
 
 
-#TESTS =====================================================
-submit_helpdesk_ticket('STC111') # The first ticket issued.
-submit_helpdesk_ticket('ROM201')
-submit_helpdesk_ticket('STC207')
-submit_helpdesk_ticket('KIM333')
-submit_helpdesk_ticket('MC107') # The last ticket issued.
+    def show_helpdesk_tickets(self):
 
-print('The following locations need maintanence: ')
-print(show_helpdesk_tickets())
-============================================================
+        return self.tickets
 
-# Output: ['STC111', 'ROM201', 'STC207', 'KIM333', 'MC107']
-# Notice the placement of 'STC111' and 'MC107'
+
+    def show_next_ticket(self):
+
+        return self.tickets.pop(0)
+
+
+ticket_object = Queue()
+
+#TESTS ===============
+ticket_object.submit_helpdesk_ticket("STC111") # The first ticket issued.
+ticket_object.submit_helpdesk_ticket('ROM201')
+ticket_object.submit_helpdesk_ticket('STC207')
+ticket_object.submit_helpdesk_ticket('KIM333')
+ticket_object.submit_helpdesk_ticket('MC107') # The last ticket issued.
+
+print('====================================\n')
+print('The next location that needs assistance: ')
+print(ticket_object.show_next_ticket()) #Shows the first ticket in Queue.
+
+
+print('The following locations need assistance:')
+print(ticket_object.show_helpdesk_tickets())
+print('\n====================================')
+# Output: 
+The next location that needs assistance:
+STC111
+The following locations need assistance:
+['ROM201', 'STC207', 'KIM333', 'MC107']
+
+Notice the placement of 'STC111' and 'MC107'
 ```
-### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list.
+### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list. The first ticket being shown by the show_next_ticket() function, which grabs the first in the Queue and displays it.
 
 # [Practice]:
 
@@ -109,33 +129,40 @@ def add_customer_to_dictionary(name): #Adds customer to dictionary.
 
 #==================================QUEUE===========================================
 
+class Queue():
 
-queue = []
+    def __init__(self):
 
-def add_values_into_queue(dictionary): #Transfer existing customers from dictionary into the queue through this function...
+        self.queued_customers = []
 
-    pass
+    def add_values_into_queue(self, dictionary): #Transfer existing customers from dictionary into the queue through this function...
 
-def add_customer_queue(name): #Let this function add future customers into the Queue.
+        pass
 
-    pass
+    def add_customer_queue(self, name): #Let this function add future customers into the Queue.
 
-def show_customers():
+        pass
 
-    return queue
+    def show_customers(self):
+
+        return self.queued_customers
 
 
 
 
 #=====TESTS========================================================
+new_queue = Queue() #Instantiates the Queue object.
+
 add_customer_to_dictionary("Shelby")#Adds a customer to the dictionary.
 add_customer_to_dictionary("Ryan")
 add_customer_to_dictionary("Louis")
 
-add_values_into_queue(customers)
-add_customer_queue('Reggie')
-add_customer_queue('Dominic')
-add_customer_queue('Lola')
+new_queue.add_values_into_queue(customers)
+new_queue.add_customer_queue('Reggie')
+new_queue.add_customer_queue('Dominic')
+new_queue.add_customer_queue('Lola')
 
 print(show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
 #==================================================================
+```
+

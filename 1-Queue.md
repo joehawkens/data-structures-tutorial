@@ -58,7 +58,7 @@ print(show_helpdesk_tickets())
 # Output: ['STC111', 'ROM201', 'STC207', 'KIM333', 'MC107']
 # Notice the placement of 'STC111' and 'MC107'
 ```
-### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see server 12 and server 19 were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
+### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
 
 # Apply what you've learned [Practice]:
 

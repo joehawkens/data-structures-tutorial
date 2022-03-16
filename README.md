@@ -9,9 +9,9 @@
 
 ## Each tutorial module will be formatted as follows
 
-#### Data Structure (name, description, diagram) - What is it?
-#### Documentation (syntax) - How to use it?
-#### Implementation (big-o notation and justification) - When to use it?
+### Data Structure (name, description, diagram) - What is it?
+### Documentation (syntax) - How to use it?
+### Implementation (big-o notation and justification) - When to use it?
 
-#### Completed example code problem
-#### Incomplete example code problem
+### Completed example code problem
+### Incomplete example code problem

@@ -41,33 +41,46 @@ def add_customer_to_dictionary(name): #Adds customer to dictionary.
 
 #==================================QUEUE===========================================
 
+class Queue():
 
-queue = []
+    def __init__(self):
 
-def add_values_into_queue(dictionary): #Transfer existing customers from dictionary into the queue through this function...
+        self.queued_customers = []
 
-    pass
+    def add_values_into_queue(self, dictionary):
 
-def add_customer_queue(name): #Let this function add future customers into the Queue.
+        pass
 
-    pass
 
-def show_customers():
+    def add_customer_queue(self, name):
 
-    return queue
+        pass
+
+    def show_customers(self):
+
+        return self.queued_customers
 
 
 
 
 #=====TESTS========================================================
+new_queue = Queue() #Instantiates the Queue object.
+
 add_customer_to_dictionary("Shelby")#Adds a customer to the dictionary.
 add_customer_to_dictionary("Ryan")
 add_customer_to_dictionary("Louis")
 
-add_values_into_queue(customers)
-add_customer_queue('Reggie')
-add_customer_queue('Dominic')
-add_customer_queue('Lola')
+new_queue.add_values_into_queue(customers)
+new_queue.add_customer_queue('Reggie')
+new_queue.add_customer_queue('Dominic')
+new_queue.add_customer_queue('Lola')
 
-print(show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
+print(new_queue.show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
+#Output:
+#['Rob', 'Kelly', 'Anna', 'Katie', 'Peter', 'Joshua', 
+# 'Karen', 'Ignacio', 'Johann', 
+# 'Frank', 'Derrin', 'Sarah', 
+# 'Jake', 'Meagan', 'Richard', 'Manny',
+#  'Sam', 'Matthew', 'Maria', 'Jessica', 'Shelby', 
+# 'Ryan', 'Louis', 'Reggie', 'Dominic', 'Lola']
 #==================================================================

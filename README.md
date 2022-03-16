@@ -7,11 +7,11 @@
 ### [Trees](https://github.com/joehawkens/data-structures-final/blob/main/3-Trees.md)
 
 
-## Each tutorial module will be formatted as follows
+## Each tutorial module will be split into five parts:
 
-### Data Structure (name, description, diagram) - What is it?
-### Documentation (syntax) - How to use it?
-### Implementation (big-o notation and justification) - When to use it?
+### 1. Data Structure (name, description, diagram) - What is it?
+### 2. Documentation (syntax) - How to use it?
+### 3. Implementation (big-o notation and justification) - When to use it?
 
-### Completed example code problem
-### Incomplete example code problem
+### 4. Completed example code problem
+### 5. Incomplete example code problem

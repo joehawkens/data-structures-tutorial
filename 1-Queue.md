@@ -1,12 +1,6 @@
-Completed example code problem
-Incomplete example code w/ tests
-
-#### Data structures are a way to structure data. Some Data Structures work better than others depending on the problem you're solving.
-
-
 # Queue [What is it?]
 
-### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you exit from the front.
+### Queues structure data the same way cars line up in a drive-through. To enter (insert) you go in from the back. And to exit (remove) you leave from the front.
 
 ![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
@@ -26,17 +20,16 @@ Find size (Size):      size = len(queue)
 
 ## Implementation [When to use it]:
 
-### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
+### You implement Queues when the order of data matters in a problem. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, Insertion and Deletion with a Queues boasts an impressive speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
 
-## [Example]:
+# [Example]:
 ### Let's see what this looks like with an example problem.
 
-### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
-
+### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data structure into the design...
 ```
 tickets = []
 
@@ -51,28 +44,97 @@ def show_helpdesk_tickets():
     return tickets
 
 
-#TESTS ===============
+#TESTS =====================================================
 submit_helpdesk_ticket('STC111') # The first ticket issued.
 submit_helpdesk_ticket('ROM201')
 submit_helpdesk_ticket('STC207')
 submit_helpdesk_ticket('KIM333')
 submit_helpdesk_ticket('MC107') # The last ticket issued.
 
-print('====================================\n')
-print('The following servers need repairs:')
+print('The following locations need maintanence: ')
 print(show_helpdesk_tickets())
-print('\n====================================')
+============================================================
+
 # Output: ['STC111', 'ROM201', 'STC207', 'KIM333', 'MC107']
 # Notice the placement of 'STC111' and 'MC107'
 ```
-### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see server 12 and server 19 were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
+### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see 'STC111' and 'MC107' were the first and last tickets issued, in the output you can see they are the first and last elements in the list.
 
-# Apply what you've learned [Practice]:
+# [Practice]:
 
-### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a pre-order campaign so customers can sign up as shipments are re-supplied.
-### However, the programmer that created the sign-up for shipments used a dictionary to order the data instead of a list. This makes the operations inefficient as a dictionary has a Big-O
+### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a preorder campaign so customers can sign up as shipments are resupplied.
+### However, the programmer that created the sign-up for shipments used a dictionary to order the data instead of a list. This makes the operations inefficient as a dictionary has a Big-O of O(n) for Insertion and Deletion, as opposed to O(1) for Queues.
 
 ```
+#Scenario: Previous programmer didn't integrate a Queue structure into the preorder process...Instead they used a dictionary.
+#Implement the Queue by doing the following:
+#       1. Transfer existing customers from the dictionary into a list.
+#       2. Create a funciton that can add future customers into the Queue.
+
+#==============================================================================
+
+customers = {
+
+    #number:name
+    #number represents their place in the Queue. (1 = first, 20 = last, etc.)
+
+    1:'Rob',
+    2:'Kelly',
+    3:'Anna',
+    4:'Katie',
+    5:'Peter',
+    6:'Joshua',
+    7:'Karen',
+    8:'Ignacio',
+    9:'Johann',
+    10:'Frank',
+    11:'Derrin',
+    12:'Sarah',
+    13:'Jake',
+    14:'Meagan',
+    15:'Richard',
+    16:'Manny',
+    17:'Sam',
+    18:'Matthew',
+    19:'Maria',
+    20:'Jessica'
+
+}
+
+
+def add_customer_to_dictionary(name): #Adds customer to dictionary.
+
+    amount = len(customers) + 1
+    customers[amount] = name
+
+#=============================================================================
+
+
+queue = []
+
+def add_value_into_queue(key): #Transfer existing customers from dictionary into the queue through this function...
+
+    pass
+
+def add_customer_queue(name): #Let this function add future customers into the Queue.
+
+    pass
+
+def show_customers():
+
+    return queue
+
+#=====TESTS========================================================
+add_customer_to_dictionary("Shelby")#Adds a customer to the dictionary.
+add_customer_to_dictionary("Ryan")
+add_customer_to_dictionary("Louis")
+
+add_customer_queue('Reggie')
+add_customer_queue('Dominic')
+add_customer_queue('Lola')
+
+print(show_customers()) #Should return the 20 customers from the dictionary and the three added above (last).
+#=====TESTS========================================================
 
 ```
 

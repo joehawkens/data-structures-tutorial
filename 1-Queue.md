@@ -35,15 +35,15 @@ Access | Search | Insertion | Deletion |
 ## [Example]:
 ### Let's see what this looks like with an example problem.
 
-### Scenario: The IT department at your University needs to a software application that lets them recieve help desk tickets around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
+### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
 
 ```
 tickets = []
 
 
-def submit_helpdesk_ticket(problem): #A function that recieves help desk tickets and assigns them a spot in the queue.
+def submit_helpdesk_ticket(location): #A function that recieves help desk tickets by location and assigns them a spot in the queue.
 
-    tickets.append(problem)
+    tickets.append(location)
 
 
 def show_helpdesk_tickets():
@@ -52,29 +52,27 @@ def show_helpdesk_tickets():
 
 
 #TESTS ===============
-submit_helpdesk_ticket('server_12') # The first ticket issued.
-submit_helpdesk_ticket('server_6')
-submit_helpdesk_ticket('server_30')
-submit_helpdesk_ticket('server_1')
-submit_helpdesk_ticket('server_19') # The last ticket issued.
+submit_helpdesk_ticket('STC111') # The first ticket issued.
+submit_helpdesk_ticket('ROM201')
+submit_helpdesk_ticket('STC207')
+submit_helpdesk_ticket('KIM333')
+submit_helpdesk_ticket('MC107') # The last ticket issued.
 
 print('====================================\n')
 print('The following servers need repairs:')
 print(show_helpdesk_tickets())
 print('\n====================================')
-# Output: ['server_12', 'server_6', 'server_30', 'server_1', 'server_19'] 
-# Notice the placement of server_12 and server_19.
+# Output: ['STC111', 'ROM201', 'STC207', 'KIM333', 'MC107']
+# Notice the placement of 'STC111' and 'MC107'
 ```
 ### Whenever a help desk ticket is issued through the submit_helpdesk_ticket() function it is added to a Queue (list). Then this list is displayed in the order they were recieved. In the tests you can see server 12 and server 19 were the first and last tickets issued, in the output you can see they are the first and last elements in the list (as expected).
 
 # Apply what you've learned [Practice]:
 
 ### Scenario: You work for a phone company that plans on releasing a new Smartphone soon. They usually have enough supply to meet demand, however, due to the global semiconductor shortage they know they'll run out as soon as they release. Because of this, they've started a pre-order campaign so customers can sign up as shipments are re-supplied.
-### However, the programmer that created the sign-up for shipments forgot to implement the Queue data structure and now all the orders are set to randomly process instead of in-order. Your job is to fix this problem and succesfully implement a Queue.
+### However, the programmer that created the sign-up for shipments used a dictionary to order the data instead of a list. This makes the operations inefficient as a dictionary has a Big-O
 
 ```
-
-
 
 ```
 

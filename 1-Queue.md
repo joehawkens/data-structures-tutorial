@@ -170,7 +170,7 @@ print(show_customers())
 #==================================================================
 ```
 
-## Solution: !(https://github.com/joehawkens/data-structures-final/blob/main/Code/queue_solution.py)
+## [Click here for the solution](https://github.com/joehawkens/data-structures-final/blob/main/Code/queue_solution.py)
 
 ## Key Takeaways:
 

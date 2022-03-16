@@ -26,7 +26,7 @@ Find size (Size):      size = len(queue)
 
 ## Implementation [When to use it]:
 
-### This data strucutre is effective when you need to make a "line" in a Software application. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
+### You implement Queues when the order of data matters in a problem. You can use other Data Structures to accomplish this task, but they wouldn't be as efficient. As far as Big-O notation goes, the Queue reigns king in Insertion and Deletion with a speed of O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
@@ -35,8 +35,7 @@ Access | Search | Insertion | Deletion |
 ## [Example]:
 ### Let's see what this looks like with an example problem.
 
-### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
-
+### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
 ```
 tickets = []
 

@@ -29,7 +29,7 @@ Access | Search | Insertion | Deletion |
 ## [Example]:
 ### Let's see what this looks like with an example problem.
 
-### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data strucutre into the design...
+### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data structure into the design...
 ```
 tickets = []
 

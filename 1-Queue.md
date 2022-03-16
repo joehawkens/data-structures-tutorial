@@ -44,17 +44,17 @@ def show_helpdesk_tickets():
     return tickets
 
 
-#TESTS ===============
+#TESTS =====================================================
 submit_helpdesk_ticket('STC111') # The first ticket issued.
 submit_helpdesk_ticket('ROM201')
 submit_helpdesk_ticket('STC207')
 submit_helpdesk_ticket('KIM333')
 submit_helpdesk_ticket('MC107') # The last ticket issued.
 
-print('====================================\n')
-print('The following servers need repairs:')
+print('The following locations need maintanence: ')
 print(show_helpdesk_tickets())
-print('\n====================================')
+============================================================
+
 # Output: ['STC111', 'ROM201', 'STC207', 'KIM333', 'MC107']
 # Notice the placement of 'STC111' and 'MC107'
 ```

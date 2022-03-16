@@ -170,6 +170,8 @@ print(show_customers())
 #==================================================================
 ```
 
+## Solution: !(https://github.com/joehawkens/data-structures-final/blob/main/Code/queue_solution.py)
+
 ## Key Takeaways:
 
 > In the Python programming language, a Queue is implemented as a list.

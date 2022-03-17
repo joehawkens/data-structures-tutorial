@@ -3,7 +3,7 @@
 
 ## What are they?
 
-### Data Structures are, as the name implies, ways to structure data. Each data structure organizes data differently and because of this, some data structures are better suited than others for solving varying problems. In addition to this, Algorithms are used with data structures to sort through the data to manipulate it in some way (add, remove, replace, edit).
+### Data Structures are, as the name implies, ways to structure data. Each data structure organizes data differently and because of this, some data structures are better suited than others for solving varying problems. In addition to this, Algorithms are used with data structures to sort through the data to manipulate it in some way (add, remove, replace, retrieve, etc).
 
 ![Data Structures and Algorithms with legos.](https://github.com/joehawkens/data-structures-final/blob/main/Assets/AlgorithmsDiagram.PNG)
 

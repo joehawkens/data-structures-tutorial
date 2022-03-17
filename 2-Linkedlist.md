@@ -8,7 +8,7 @@
 
 ### Linked lists are best created by using a class...take a look at this example to get a feel of how it's structured with a class...
 
-```
+``` Python
 class linked_list():
 
     class Node():
@@ -70,7 +70,7 @@ Access | Search | Insertion | Deletion |
 ### Let's see what this looks like with an example problem.
 
 ### Scenario: 
-``` <space>python
+``` python
 ``` 
 ### Example Notes
 

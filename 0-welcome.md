@@ -20,6 +20,6 @@
 |O(1) | O(log n) | O(n) | O(n log n) | O(n^2) |O(2^n) | O(n!)|
 
 
-
+![Big-O Notation Time Complexity for Operations](https://res.cloudinary.com/practicaldev/image/fetch/s--7xoWYVac--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/s67yh2hsgfwrg6w08skj.png)
 
 ## Examples of when to use certain data strucutres...

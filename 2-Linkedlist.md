@@ -6,7 +6,7 @@
 
 # Documentation [How to use it?]
 
-### Linked lists are best created by using a Class...take a look at this example to get a feel of how it's structured with a class...
+### Linked lists are best created by using a class...take a look at this example to get a feel of how it's structured with a class...
 
 ```
 class linked_list():
@@ -42,15 +42,18 @@ class linked_list():
             self.head.prev = new_node
             self.head = new_node
 ```
-### This is the bare bones of a linked list. The most important documentation to know is how the list is made. First the linked list class is created. Inside of that class is a nested class representing the Node. The node has 3 attributes that represent both pointers and the data itself. (data, next, and previous). The linked list is initialized with the head and the tail, which will point to the nodes inserted there. Finally, we have the insert_head function. The linked_list class will have several functions which cover the entire breadth of capabilities, such as removing, inserting, iterating, etc. But to keep things simple we'll just look at the insert_head functions to get an idea of how all these elements play together...
+### This is the bare bones of a linked list. The most important documentation to know is how the list is made. First the linked list class is created. Inside of that class is a nested class representing the Node. The node has 3 attributes that represent both pointers and the data itself. (data, next, and previous). The linked list is initialized with the head and the tail, which will point to the nodes inserted there. Finally, we have the insert_head function. The linked_list class will have several functions which cover the entire breadth of capabilities, such as removing, inserting, iterating, etc. But to keep things simple I've only added the insert head function for you to get a feel of how all these elements interact.
 
-### 
 
-### Common operations assosciated with the Queue...
+### Common operations associated with the Queue...
+
 ```
-Adding (Enqueue):  
-Removing (Dequeue):    
-Find size (Size):      
+Insert Tail/Head:      linked_list.append(value) or linked_list.appendleft(value)
+Remove Tail/Head:      linked_list.pop(0) or linked_list.pop()
+Insert Node:           insert(i, value) - Insert value after i
+Remove Node:           del linked_list(value)
+Replace Node:          linked_list.replace(value)
+Find size (Size):      len(linked_list)
 ``` 
 
 
@@ -61,6 +64,7 @@ Find size (Size):
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
+
 
 # Example:
 ### Let's see what this looks like with an example problem.

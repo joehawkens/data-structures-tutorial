@@ -1,4 +1,4 @@
-# Algorithms and Data Structures Essentials
+# Algorithms and Data Structures
 
 
 ## What are they?

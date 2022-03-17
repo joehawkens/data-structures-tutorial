@@ -4,9 +4,6 @@
 
 ![A Queue compared to a line of people](https://github.com/joehawkens/data-structures-final/blob/main/Assets/QueueDiagram.PNG?raw=true)
 
-# How is it stored in memory?
-### Contigiously.
-
 # Documentation [How to use it?]
 
 ### In the Python programming language, a Queue is implemented as a list, so if you wanted to make a Queue you'd simply make a list...
@@ -14,7 +11,7 @@
 queue = []
 ```
 ### Common operations assosciated with the Queue...
-``` Python
+```
 Adding (Enqueue):      queue.append(item)
 Removing (Dequeue):    queue.remove[0] OR queue.pop(0)    
 Find size (Size):      size = len(queue)

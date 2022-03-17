@@ -1,3 +1,29 @@
+# Computer Memory
+
+## What is it?
+### Computer memory is necessary to understand in order to have a deeper comprehension of data structures. Computer memory is where data is stored in an Operating System. There's long-term memory storage (hard drives) and short-term memory storage (RAM). We'll be focusing on the latter since it plays an important role in data structures. RAM is where data is processed and manipulated, whereas hard drives store that manipulated data for long periods of time.
+
+## Why is it important?
+### We use RAM every time we boot up our computers. Reading this file right now is using up space in your RAM. And we especially use it when making calculations in programming data structures. There are two ways data can be stored in memory: Contiguously and Non-contiguously. Each data structure stores their data in one of these two ways. This is important to understand as both methods have their strengths and weaknesses.
+
+![Understanding memory allocation](https://github.com/joehawkens/data-structures-final/blob/main/Assets/MemoryAllocation.PNG)
+
+
+## Let's look at said strengths and weaknesses of each memory allocation technique:
+
+|Contiguous|Non-contiguous|
+|-----------|--------------|
+|Faster in execution |Slower in exectuion|
+|Easier for OS to control|Harder for OS to control|
+|Wastes memory|Saves memory|
+|Overhead (time-wasting operations) are minimum|Overhead is more common|
+|Internal and External fragmentation can occur | Only External fragmentation can occur|
+
+## But what is Internal and Exteral fragmentation?
+### Fragementation what happens in the process of memory allocation. When memory is used up by a process and then finishes that process, it opens up that space for the next process, however, with multiple processes of varying sizes coming and going at once, many free spaces are broken down into unusable, wasted memory.
+
+
+
 # Algorithms and Data Structures
 
 

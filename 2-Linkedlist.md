@@ -59,19 +59,19 @@ Find size (Size):      len(linked_list)
 
 # Implementation [When to use it?]:
 
-### A linked list 
-
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
+ 
+### Linked Lists have a time complexity of O(1) when it comes to insertion and deletion, this is good, but the best part of a linked list is it's ability to insert data anywhere within the structure, without disrupting it's neighboring nodes. Unlike an array, where inserting would shift all data over 1 place because arrays organize data contigiously (next to each other). Whereas linked lists organize data in memory non-contigiously. This allows a more flexible approach to data allocation which results in a more 
 
 
 # Example:
 ### Let's see what this looks like with an example problem.
 
 ### Scenario: 
-```
-```
+``` <space>python
+``` 
 ### Example Notes
 
 # Practice:
@@ -80,7 +80,7 @@ Access | Search | Insertion | Deletion |
 
 ### Scenario: .....
 
-```
+``` <space>python
 CODE
 ```
 

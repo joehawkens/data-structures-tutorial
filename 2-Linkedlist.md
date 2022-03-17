@@ -70,9 +70,12 @@ Access | Search | Insertion | Deletion |
 ### Now that we know Linked lists contain data points that are easily removed and inserted, let's look at a real world example of this. Think of a text editor on a computer and how each letter in such a document is referencing the next and followed by the previous. It sounds a lot like a linked list. 
 
 ### Scenario: 
-``` python
+``` Python
 ``` 
 ### Example Notes
+
+
+
 
 # Practice:
 
@@ -80,20 +83,112 @@ Access | Search | Insertion | Deletion |
 
 ### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the student database into a linked list instead of an array to help organize them be more organized.
 
-``` <space>python
+``` Python
+#We need to add the students from the array into the linked list. To do this follow these steps:
+#   1. Add the first student at the head.
+#   2. Add the proceeding students at the tail.
+
+
+
+# Student database (fixed array)
+# students[0] = Rob - Student ID = 0
+# students[1] = Cher - Student ID = 1
+# students[14] = Mariah - Student ID = 14
+
+students = ["Rob", "Cher", "Michael", "Arianna", "Taylor", "Kanye", "Selena", "Marshal", "Jimi", "Bob", "Whitney", "David", "Paul", "Aretha", "Mariah"]
+
+
+class linked_list():
+
+    class Node():
+
+        def __init__(self, value):
+
+            self.next = None
+            self.prev = None
+            self.data = value
+
+
+    def __init__(self):
+
+        self.head = None
+        self.tail = None
+
+
+
+    def insert_head(self, value):
+        """
+        Insert a new node at the front, the head, of the linked list. 
+        """
+
+
+
+    def insert_tail(self, value):
+        """
+        Insert a new node at the back, the tail, of the linked list.
+        """
+
+
+    def go_forward(self):
+    
+        current = self.head
+       
+        while current is not None:
+            
+            print(current.data)
+            current = current.next
 
 
 
 
+#======================================
+student_data = linked_list() #Creates the linked list.
+# =============== TESTS ===============
+student_data.insert_head('Rob')
+student_data.insert_tail('Cher')
+student_data.insert_tail('Michael')
+student_data.insert_tail('Arianna')
+student_data.insert_tail('Taylor')
+student_data.insert_tail('Kanye')
+student_data.insert_tail('Selena')
+student_data.insert_tail('Marshal')
+student_data.insert_tail('Jimi')
+student_data.insert_tail('Bob')
+student_data.insert_tail('Whitney')
+student_data.insert_tail('David')
+student_data.insert_tail('Paul')
+student_data.insert_tail('Aretha')
+student_data.insert_tail('Mariah')
+#======================================
+print(student_data.go_forward())
+# Expected output:
+'''
+Rob
+Cher
+Michael
+Arianna
+Taylor
+Kanye
+Selena
+Marshal
+Jimi
+Bob
+Whitney
+David
+Paul
+Aretha
+Mariah
+'''
+#======================================
 ```
 
-## [Click here for the solution](Solution link)
+## [Click here for the solution](https://github.com/joehawkens/data-structures-final/blob/main/Code/linked_list_solution.py)
 
 ## Key Takeaways:
 
-> Takeaway 1
+> Linked lists are useful for manipulating individual data points (Nodes) without disrupting the location of other Nodes in the structure.
 
-> Takeaway 2
+> Linked lists are stored non-contiguously in memory, which saves space in memory if there is large input.
 
-> Takeaway 3
+> Linked lists are extremely effective when you need to do a lot of insertions/removals.
 

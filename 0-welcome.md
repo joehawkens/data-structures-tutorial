@@ -14,6 +14,11 @@
 |Contiguous|Non-contiguous|
 |-----------|--------------|
 |Faster in execution |Slower in exectuion|
+|Easier for OS to control|Harder for OS to control|
+|Wastes memory|Saves memory|
+|Overhead (time-wasting operations) are minimum|Overhead is more common|
+|Internal and External fragmentation can occur | Only External fragmentation can occur|
+
 
 
 

@@ -19,7 +19,8 @@
 |Overhead (time-wasting operations) are minimum|Overhead is more common|
 |Internal and External fragmentation can occur | Only External fragmentation can occur|
 
-
+## But what is Internal and Exteral fragmentation?
+### Fragementation what happens in the process of memory allocation. When memory is used up by a process and then finishes that process, it opens up that space for the next process, however, with multiple processes of varying sizes coming and going at once, many free spaces are broken down into unusable, wasted memory.
 
 
 

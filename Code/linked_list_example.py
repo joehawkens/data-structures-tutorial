@@ -14,6 +14,7 @@ class linked_list():
 
         self.head = None
         self.tail = None
+        self.size = len(linked_list)
 
 
     def insert_head(self, value):

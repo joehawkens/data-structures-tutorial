@@ -6,7 +6,7 @@
 
 # Documentation [How to use it?]
 
-### Linked lists are best created by using a class...take a look at this example to get a feel of how it's structured with a class...
+### Linked lists are best created by using classes...take a look at this example to get a feel of how it's structured with a class...
 
 ``` Python
 class linked_list():

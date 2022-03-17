@@ -7,7 +7,7 @@
 # Documentation [How to use it?]
 
 ### In the Python programming language, a Queue is implemented as a list, so if you wanted to make a Queue you'd simply make a list...
-```
+``` Python
 queue = []
 ```
 ### Common operations assosciated with the Queue...
@@ -30,7 +30,7 @@ Access | Search | Insertion | Deletion |
 ### Let's see what this looks like with an example problem.
 
 ### Scenario: The IT department at BYUI needs a software application that lets them recieve help desk tickets from locations around campus in real time. You want to ensure that each ticket is served in the order they are recieved, so you decide to implement the Queue data structure into the design...
-```
+``` Python
 class Queue():
 
     def __init__(self):
@@ -89,7 +89,7 @@ Notice the placement of 'STC111' and 'MC107'
 ###  1. Transfer existing customers from the dictionary into a list.
 ###  2. Create a funciton that can add future customers into the Queue.
 
-```
+``` Python
 #Scenario: Previous programmer didn't integrate a Queue structure into the preorder process...Instead they used a dictionary.
 #Implement the Queue by doing the following:
 #       1. Transfer existing customers from the dictionary into a list.

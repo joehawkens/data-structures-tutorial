@@ -63,11 +63,11 @@ Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
  
-### Linked Lists have a time complexity of O(1) when it comes to insertion and deletion, this is good, but the best part of a linked list is it's ability to insert data anywhere within the structure, without disrupting it's neighboring nodes. Unlike an array, where inserting would shift all data over 1 place because arrays organize data contigiously (next to each other). Whereas linked lists organize data in memory non-contigiously. This allows a more flexible approach to data allocation which results in a more 
+### Linked Lists are organized non-contiguously in memory. This means that they are randomly assigned open slots of memory, instead of in sequence, this provides the benefit of saving space within memory. And because they are randomly assigned within memory, Insertion and Deletion are constant time O(1) because inserting won't disrupt neighboring nodes and require shifting the data over 1 space like arrays do. This can be especially helpful when you need to have your data stored and be easily referenced.
 
 
 # Example:
-### Let's see what this looks like with an example problem.
+### Now that we know Linked lists contain data points that are easily removed and inserted, let's look at a real world example of this. Think of a text editor on a computer and how each letter in such a document is referencing the next and followed by the previous. It sounds a lot like a linked list. 
 
 ### Scenario: 
 ``` python
@@ -78,10 +78,13 @@ Access | Search | Insertion | Deletion |
 
 ### Try this practice by implementing a linked list yourself...
 
-### Scenario: .....
+### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the student database into a linked list instead of an array to help organize them be more organized.
 
 ``` <space>python
-CODE
+
+
+
+
 ```
 
 ## [Click here for the solution](Solution link)

@@ -13,7 +13,7 @@
 
 |Contiguous|Non-contiguous|
 |-----------|--------------|
-
+|Faster in execution |Slower in exectuion|
 
 
 

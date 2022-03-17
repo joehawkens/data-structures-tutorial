@@ -20,6 +20,9 @@
 |O(1) | O(log n) | O(n) | O(n log n) | O(n^2) |O(2^n) | O(n!)|
 
 
-![Big-O Notation Time Complexity for Operations](https://res.cloudinary.com/practicaldev/image/fetch/s--7xoWYVac--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/s67yh2hsgfwrg6w08skj.png)
+![Big-O Notation Time Complexity for Operations](https://pbs.twimg.com/media/CRW23IcWEAAgpdd.png)
+
+## As made clear by the diagram, each Data Structure carries unique strengths and weaknesses when managing large input. When measuring time complexity it's best to use the "Worst Case Scenario" as a guide for selecting a Data Structure that fits your needs, Worst Case Scenario gives you the performance of a Data Structure at it's very worst, meaning the worst it could possibly get depending on the input given it. If it has a fast speed in Worst Case Scenario, it's usually a safe bet. However, this shouldn't be the only thing that determines your choice of data structure.
+
 
 ## Examples of when to use certain data strucutres...

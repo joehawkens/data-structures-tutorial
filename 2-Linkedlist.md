@@ -66,9 +66,7 @@ Access | Search | Insertion | Deletion |
 
 
 # Example:
-### Now that we know Linked lists contain data points that are easilyreferenced and therefore easily removed and inserted, let's look at a real world example of this:
-
-### Scenario: We need to remove items from the linked list, so we do it this way.
+### As mentioned previously, Linked lists are capable of much more than just inserting at the head. They can insert at the tail, in the middle, Nodes can be removed, replaced, etc. Let's take a deeper look at Remove Node operation. In this example code we loop through the linked list starting at the head. There are 4 conditionals this runs off of. If the value matches the head, it will insert at the head, the same goes for the tail and a value in the middle. But if none of the values match it will change the "curr" variable to curr.next, which would be the previous of the next node - and on that node all the conditionals will run through again. This process repeats until a match is found. Then the Node will be removed. This is to help show you how the linked list would be iterated in order to remove a node and to get another example of an opeartion performed by the data structure.
 
 ``` Python
 
@@ -121,15 +119,9 @@ class linked_list():
 
                 curr = curr.next
 ``` 
-### Example Notes
-
-
-
-
-
 # Practice:
 
-### Try this practice by implementing a linked list yourself...
+### Now that you've seen examples from above, try this practice by implementing a linked list yourself...
 
 ### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the student database into a linked list instead of an array to help organize them be more organized.
 

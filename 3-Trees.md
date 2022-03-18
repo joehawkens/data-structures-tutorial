@@ -140,7 +140,7 @@ for x in tree:
     print(x)  # 1, 3, 5, 7, 10
 
 ```
-### Common operations assosciated with the Queue...
+### Common operations assosciated with the BST...
 ```
 Insert(value)
 Remove(value)
@@ -168,7 +168,7 @@ Access | Search | Insertion | Deletion |
 
 # Practice:
 
-### Try this practice by implementing a linked list yourself...
+### Try this practice by implementing a Binary Search Tree yourself...
 
 ### Scenario: .....
 
@@ -180,8 +180,8 @@ CODE
 
 ## Key Takeaways:
 
-> A Binary Search Tree is extremely efficient in searching and accessing data within it's Nodes, pulling an impressive O(log(n)) time complexity.
+> A Binary Search Tree is extremely efficient in searching within it's Nodes, pulling an impressive O(log(n)) time complexity.
 
-> Takeaway 2
+> The Tree is very beneficial if you need real-time data accessed faster than O(n) time.
 
-> Takeaway 3
+> Binary Trees are similar to Linked Lists in that they are structured with Nodes.

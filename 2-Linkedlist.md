@@ -48,11 +48,10 @@ class linked_list():
 ### Common operations associated with the Queue...
 
 ```
-Insert Tail/Head:      linked_list.append(value) or linked_list.appendleft(value)
-Remove Tail/Head:      linked_list.pop(0) or linked_list.pop()
-Insert Node:           insert(i, value) - Insert value after i
-Remove Node:           del linked_list(value)
-Replace Node:          linked_list.replace(value)
+Insert Tail/Head:      linked_list.insert_head() or linked_list.insert_tail()
+Remove Tail/Head:      linked_list.remove_head() or linked_list.remove_tail()
+Insert Node:           linked_list.insert(x, value) - Inserts value after node "x"
+Remove Node:           linked_list.remove(value)
 Find size (Size):      len(linked_list)
 ``` 
 
@@ -67,19 +66,62 @@ Access | Search | Insertion | Deletion |
 
 
 # Example:
-### Now that we know Linked lists contain data points that are easily removed and inserted, let's look at a real world example of this. Think of a text editor on a computer and how each letter in such a document is referencing the next and followed by the previous. It sounds a lot like a linked list. 
+### As mentioned previously, Linked lists are capable of much more than just inserting at the head. They can insert at the tail, in the middle, Nodes can be removed, replaced, etc. Let's take a deeper look at Remove Node operation. In this example code we loop through the linked list starting at the head. There are 4 conditionals this runs off of. If the value matches the head, it will insert at the head, the same goes for the tail and a value in the middle. But if none of the values match it will change the "curr" variable to curr.next, which would be the previous of the next node - and on that node all the conditionals will run through again. This process repeats until a match is found. Then the Node will be removed. This is to help show you how the linked list would be iterated in order to remove a node and to get another example of an opeartion performed by the data structure.
 
-### Scenario: 
 ``` Python
+
+class linked_list():
+
+    class Node():
+
+        def __init__(self):
+
+            self.next = None
+            self.prev = None
+            self.data = 'Data'
+
+
+    def __init__(self):
+
+        self.head = None
+        self.tail = None
+        self.size = len(linked_list)
+
+
+    def remove(self, value):
+        """
+        Remove the first node that contains the inputted value.
+        """
+
+        curr = self.head
+
+        while curr is not None:
+
+            if curr.data == value and curr == self.head:
+
+                self.head.next.prev = None
+                self.head = self.head.next
+                break
+
+            elif curr.data == value and curr == self.tail:
+
+                self.tail.prev.next = None
+                self.tail = self.tail.prev
+                break
+
+            elif curr.data == value:
+
+                curr.next.prev = curr.prev
+                curr.prev.next = curr.next
+                break
+            
+            else:
+
+                curr = curr.next
 ``` 
-### Example Notes
-
-
-
-
 # Practice:
 
-### Try this practice by implementing a linked list yourself...
+### Now that you've seen examples from above, try this practice by implementing a linked list yourself...
 
 ### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the student database into a linked list instead of an array to help organize them be more organized.
 

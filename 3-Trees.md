@@ -1,9 +1,9 @@
 # Trees [What is it?]
 
-### The Tree data structure comes in many different flavors (Binary, Search, Red-Black, AVL, etc.) But to keep things grounded we will focus on only two types of the tree: Binary Tree and Binary Search Tree (BST). The Tree at it's core is very similar to the Linked List in that it shares a structure of Nodes. However, unlike a linked list, a Node in a Tree is able to reference two other Nodes instead of one. And instead of iterating from left to right, a trees structure moves from top to bottom
+### The Tree data structure comes in many different flavors (Binary, Search, Red-Black, AVL, etc.) But to keep things grounded we will focus on only two types of the tree: Binary Tree and Binary Search Tree (BST). The Tree at it's core is very similar to the Linked List in that it shares a structure of Nodes. However, unlike a linked list, a Node in a Tree is able to reference two other Nodes instead of one. Look at the diagram below for a visual representation:
 
 
-![Photo](link)
+![A Tree Data Structure](https://github.com/joehawkens/data-structures-final/blob/main/Assets/TreeDiagram.PNG)
 
 # Documentation [How to use it?]
 

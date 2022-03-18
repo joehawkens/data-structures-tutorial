@@ -10,20 +10,21 @@
 
 ``` Python
 class linked_list():
-
-    class Node():
-
-        def __init__(self):
-
-            self.next = None
-            self.prev = None
-            self.data = 'Data'
-
-
+    
     def __init__(self):
 
         self.head = None
         self.tail = None
+
+
+    class Node():
+
+        def __init__(self, value):
+
+            self.next = None
+            self.prev = None
+            self.data = value
+            
         
      def insert_head(self, value):
         """
@@ -42,10 +43,10 @@ class linked_list():
             self.head.prev = new_node
             self.head = new_node
 ```
-### This is the bare bones of a linked list. The most important documentation to know is how the list is made. First the linked list class is created. Inside of that class is a nested class representing the Node. The node has 3 attributes that represent both pointers and the data itself. (data, next, and previous). The linked list is initialized with the head and the tail, which will point to the nodes inserted there. Finally, we have the insert_head function. The linked_list class will have several functions which cover the entire breadth of capabilities, such as removing, inserting, iterating, etc. But to keep things simple I've only added the insert head function for you to get a feel of how all these elements interact.
+### This is the bare bones of a linked list. The most important documentation to know is how the list is initialized. First the linked list class is created. Inside of that class is a nested class representing the Node. The Node has 3 attributes that represent both pointers and the data itself. (data, next, and previous). The linked list is initialized with the head and the tail, which will point to the nodes inserted there. Finally, we have the insert_head function. The linked_list class will have several functions which cover the entire breadth of capabilities, such as removing, inserting, iterating, etc. But to keep things simple I've only added what makes up the linked list, rather than what it's able to do.
 
 
-### Common operations associated with the Queue...
+### Other common operations associated with the Linked list include...
 
 ```
 Insert Tail/Head:      linked_list.insert_head() or linked_list.insert_tail()
@@ -58,15 +59,17 @@ Find size (Size):      len(linked_list)
 
 # Implementation [When to use it?]:
 
+Big-O Notation
+-------|--------|-----------|----------|
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
  
-### Linked Lists are organized non-contiguously in memory. This means that they are randomly assigned open slots of memory, instead of in sequence, this provides the benefit of saving space within memory. And because they are randomly assigned within memory, Insertion and Deletion are constant time O(1) because inserting won't disrupt neighboring nodes and require shifting the data over 1 space like arrays do. This can be especially helpful when you need to have your data stored and be easily referenced.
+### Linked Lists are organized non-contiguously in memory. This means that they are randomly assigned open slots of memory, instead of in sequence, this provides the benefit of saving space within memory. And because they are randomly assigned within memory, Insertion and Deletion are constant time O(1) because inserting won't disrupt neighboring nodes and require shifting the data over 1 space like arrays do. 
 
 
 # Example:
-### As mentioned previously, Linked lists are capable of much more than just inserting at the head. They can insert at the tail, in the middle, Nodes can be removed, replaced, etc. Let's take a deeper look at Remove Node operation. In this example code we loop through the linked list starting at the head. There are 4 conditionals this runs off of. If the value matches the head, it will insert at the head, the same goes for the tail and a value in the middle. But if none of the values match it will change the "curr" variable to curr.next, which would be the previous of the next node - and on that node all the conditionals will run through again. This process repeats until a match is found. Then the Node will be removed. This is to help show you how the linked list would be iterated in order to remove a node and to get another example of an opeartion performed by the data structure.
+### As mentioned previously, Linked lists are capable of much more than just inserting at the head. They can insert at the tail, in the middle, Nodes can be removed, replaced, etc. But for the sake of simplicity let's take a deeper look at just one of these operations, the remove Node operation. In this example code we loop through the linked list starting at the head. There are 4 conditionals this runs off of. If the value matches the head, it will insert at the head, the same goes for the tail and a value in the middle. But if none of the values match it will change the "curr" variable to curr.next, which would be the previous of the next node - and on that node all the conditionals will run through again. This process repeats until a match is found. Then the Node will be removed. This is to help show you how the linked list would be iterated in order to remove a node and to get another example of an opeartion performed by the data structure.
 
 ``` Python
 
@@ -123,14 +126,11 @@ class linked_list():
 
 ### Now that you've seen examples from above, try this practice by implementing a linked list yourself...
 
-### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the student database into a linked list instead of an array to help organize them be more organized.
+### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Each student is assigned a student ID based on their position in this lineup. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the fixed array into a linked list to help them be more organized.
+
+### A linked list has already been created and called to put all 15 students inside of the linked list. The only thing missing is implementing the insert_head and insert_tail functions. Add code to these functions to finish implementation.
 
 ``` Python
-#We need to add the students from the array into the linked list. To do this follow these steps:
-#   1. Add the first student at the head.
-#   2. Add the proceeding students at the tail.
-
-
 
 # Student database (fixed array)
 # students[0] = Rob - Student ID = 0
@@ -230,7 +230,7 @@ Mariah
 
 > Linked lists are useful for manipulating individual data points (Nodes) without disrupting the location of other Nodes in the structure.
 
-> Linked lists are stored non-contiguously in memory, which saves space in memory if there is large input.
+> Linked lists are stored non-contiguously in memory, which saves space in memory if there is large input of data that needs to be stored.
 
-> Linked lists are extremely effective when you need to do a lot of insertions/removals.
+> Linked lists 
 

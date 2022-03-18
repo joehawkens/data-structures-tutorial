@@ -1,7 +1,7 @@
 # Computer Memory
 
 ## What is it?
-### Computer memory is necessary to understand in order to have a deeper comprehension of data structures. Computer memory is where data is stored in an Operating System. There's long-term memory storage (hard drives) and short-term memory storage (RAM). We'll be focusing on the latter since it plays an important role in data structures. RAM is where data is processed and manipulated, whereas hard drives store that manipulated data for long periods of time.
+### Computer memory is necessary to understand in order to have a deeper comprehension of data structures. Computer memory is where data is stored in an Operating System. There's long-term memory storage (hard drives) and short-term memory storage (RAM). We'll be focusing more on the latter. RAM is where data is processed and manipulated, whereas hard drives store that manipulated data for long periods of time.
 
 ## Why is it important?
 ### We use RAM every time we boot up our computers. Reading this file right now is using up space in your RAM. And we especially use it when making calculations in programming data structures. There are two ways data can be stored in memory: Contiguously and Non-contiguously. Each data structure stores their data in one of these two ways. This is important to understand as both methods have their strengths and weaknesses.

@@ -43,7 +43,7 @@ class linked_list():
             self.head.prev = new_node
             self.head = new_node
 ```
-### This is the bare bones of a linked list. The most important documentation to know is how the list is initialized. First the linked list class is created. Inside of that class is a nested class representing the Node. The Node has 3 attributes that represent both pointers and the data itself. (data, next, and previous). The linked list is initialized with the head and the tail, which will point to the nodes inserted there. Finally, we have the insert_head function. The linked_list class will have several functions which cover the entire breadth of capabilities, such as removing, inserting, iterating, etc. But to keep things simple I've only added what makes up the linked list, rather than the full range of its operations.
+### This is the bare bones of a linked list. The most important documentation to know is how the list is initialized. First the linked list class is created. Inside of that class is a nested class representing the Node. The Node has 3 attributes that represent both pointers and the data itself. (data, next, and previous). The linked list is initialized with the head and the tail, which will point to the nodes inserted there. Finally, we have the insert_head function. The linked_list class will have several functions which cover the entire breadth of capabilities, such as removing, inserting, iterating, etc. But to keep things simple I've only added what makes up the linked list, rather than what it's able to do.
 
 
 ### Other common operations associated with the Linked list include...
@@ -59,6 +59,7 @@ Find size (Size):      len(linked_list)
 
 # Implementation [When to use it?]:
 
+Big-O||||
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |

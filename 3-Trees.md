@@ -28,7 +28,7 @@ Find size (Size):
 
 # Implementation [When to use it?]:
 
-### .....Big O
+### Big-O Notation
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|

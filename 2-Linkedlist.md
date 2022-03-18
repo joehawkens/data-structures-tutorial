@@ -51,7 +51,7 @@ class linked_list():
 Insert Tail/Head:      linked_list.insert_head() or linked_list.insert_tail()
 Remove Tail/Head:      linked_list.remove_head() or linked_list.remove_tail()
 Insert Node:           linked_list.insert(x, value) - Inserts value after node "x"
-Remove Node:           linked_list.remove()
+Remove Node:           linked_list.remove(value)
 Find size (Size):      len(linked_list)
 ``` 
 

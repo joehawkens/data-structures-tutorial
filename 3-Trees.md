@@ -6,6 +6,9 @@
 
 ### The Root Node represents the Node at the top, it's also a "parent" Node of the Nodes below it. These Nodes are known as it's children Node. And those Children Nodes are parents to the Nodes below them, this pattern repeats the bigger the Tree gets. The Nodes located at the bottom of the tree are known as it's leaves. It's also important to notice that there can be "Subtrees" inside of trees, which simply represent the recurring pattern mentioned earlier.
 
+
+![A Binary Search Tree](https://github.com/joehawkens/data-structures-final/blob/main/Assets/BinarySearchTreeDiagram.PNG)
+
 # Documentation [How to use it?]
 
 ### In the Python programming language, a linked list is 

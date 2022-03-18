@@ -19,11 +19,11 @@ class linked_list():
 
     class Node():
 
-        def __init__(self):
+        def __init__(self, value):
 
             self.next = None
             self.prev = None
-            self.data = 'Data'
+            self.data = value
             
         
      def insert_head(self, value):
@@ -63,7 +63,7 @@ Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
  
-### Linked Lists are organized non-contiguously in memory. This means that they are randomly assigned open slots of memory, instead of in sequence, this provides the benefit of saving space within memory. And because they are randomly assigned within memory, Insertion and Deletion are constant time O(1) because inserting won't disrupt neighboring nodes and require shifting the data over 1 space like arrays do. This can be especially helpful when you need to have your data stored and be easily referenced.
+### Linked Lists are organized non-contiguously in memory. This means that they are randomly assigned open slots of memory, instead of in sequence, this provides the benefit of saving space within memory. And because they are randomly assigned within memory, Insertion and Deletion are constant time O(1) because inserting won't disrupt neighboring nodes and require shifting the data over 1 space like arrays do. 
 
 
 # Example:

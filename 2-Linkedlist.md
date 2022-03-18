@@ -126,12 +126,9 @@ class linked_list():
 
 ### Scenario: You work for a prestigious university that only accepts 15 students at any given time. Each student is assigned a student ID based on their position in this lineup. Because of the difficulty of classes, some students drop out late into their career. This is fine, however, on the student database, each student is registered into a fixed-size array, which means that every time an upper class student drops out, it shifts existing students over 1 space in the lineup. And since student ID numbers are their spot inside this array, it's made it a nightmare for the student records office in assigning student ID's. Now they're assigning you to change the fixed array into a linked list to help them be more organized.
 
+### A linked list has already been created and called to put all 15 students inside of the linked list. The only thing missing is implementing the insert_head and insert_tail functions. Add code to these functions to finish implementation.
+
 ``` Python
-#We need to add the students from the array into the linked list. To do this follow these steps:
-#   1. Add the first student at the head.
-#   2. Add the proceeding students at the tail.
-
-
 
 # Student database (fixed array)
 # students[0] = Rob - Student ID = 0

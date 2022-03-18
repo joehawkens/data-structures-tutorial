@@ -32,7 +32,7 @@ Find size (Size):
 
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
- O(n)  |  O(n)  |   O(1)    |    O(1)  |
+ O(log(n))  |  O(log(n))  |   O(log(n))    |    O(log(n))  |
 
 # Example:
 ### Let's see what this looks like with an example problem.
@@ -52,11 +52,11 @@ Access | Search | Insertion | Deletion |
 CODE
 ```
 
-## [Click here for the solution](Solution link)
+## [Click here for the solution](https://github.com/joehawkens/data-structures-final/blob/main/Code/tree_solution.py)
 
 ## Key Takeaways:
 
-> Takeaway 1
+> A Binary Search Tree is extremely efficient in searching and accessing data within it's Nodes, pulling an impressive O(log(n)) time complexity.
 
 > Takeaway 2
 

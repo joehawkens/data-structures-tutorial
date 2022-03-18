@@ -22,6 +22,7 @@ Find size (Size):      size = len(queue)
 
 ### One should consider implementing Queues as a data structure when trying to implement FIFO (First In First Out). As far as Big-O notation goes, Insertion and Deletion with a Queue boasts an impressive O(1). This is because there's only one space to insert (the back) and one place to remove (the front).
 
+Big-O Notation
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |

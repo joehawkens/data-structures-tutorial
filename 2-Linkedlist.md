@@ -58,8 +58,8 @@ Find size (Size):      len(linked_list)
 
 
 # Implementation [When to use it?]:
--------|--------|-----------|----------|
-Big-O 
+
+Big-O Notation
 -------|--------|-----------|----------|
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|

@@ -58,8 +58,9 @@ Find size (Size):      len(linked_list)
 
 
 # Implementation [When to use it?]:
--------|--------|-----------|----------|
-Big-O Notation
+
+Big-O Notation:
+
 Access | Search | Insertion | Deletion |
 -------|--------|-----------|----------|
  O(n)  |  O(n)  |   O(1)    |    O(1)  |
@@ -231,5 +232,5 @@ Mariah
 
 > Linked lists are stored non-contiguously in memory, which saves space in memory if there is large input of data that needs to be stored.
 
-> Linked lists 
+> The size of the Linked list is dynamic, meaning you don't have to define how big it can get when you create it.
 

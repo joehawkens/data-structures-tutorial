@@ -7,6 +7,8 @@
 ### [Trees](https://github.com/joehawkens/data-structures-final/blob/main/3-Trees.md)
 
 
+### Before the tutorials there is a primer on computer memory and a few other key topics to understand before you dive into the tutorials.
+
 ## Each tutorial module will be split into five parts:
 
 ### 1. Data Structure (name, description, diagram) - What is it?

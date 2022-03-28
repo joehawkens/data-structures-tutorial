@@ -20,7 +20,7 @@
 |Internal and External fragmentation can occur | Only External fragmentation can occur|
 
 ## But what is Internal and Exteral fragmentation?
-### Fragementation what happens in the process of memory allocation. When memory is used up by a process and then finishes that process, it opens up that space for the next process, however, with multiple processes of varying sizes coming and going at once, many free spaces are broken down into unusable, wasted memory.
+### Fragementation is what happens in the process of memory allocation. When memory is used up by a process and then finishes that process, it opens up that space for the next process, however, with multiple processes of varying sizes coming and going at once, many free spaces are broken down into unusable, wasted memory.
 
 
 
@@ -29,7 +29,8 @@
 
 ## What are they?
 
-### Data Structures, as the name implies, are ways to structure data. Each data structure organizes data differently and because of this, some data structures are better suited than others for solving problems. In addition to this, Algorithms are used with data structures to sort through the data to manipulate it in some way (add, remove, replace, retrieve, etc).
+### Data Structures, as the name implies, are ways to structure data. Each data structure organizes data differently and because of this, some data structures are better suited than others for solving problems. In addition to this, Algorithms are the instructions used with this structure to solve problems.
+
 
 ![Data Structures and Algorithms with legos.](https://github.com/joehawkens/data-structures-final/blob/main/Assets/AlgorithmsDiagram.PNG)
 
@@ -49,6 +50,3 @@
 ![Big-O Notation Time Complexity for Operations](https://pbs.twimg.com/media/CRW23IcWEAAgpdd.png)
 
 ## As made clear by the diagram, each Data Structure carries unique strengths and weaknesses when managing large input. When measuring time complexity it's best to use the "Worst Case Scenario" as a guide for selecting a Data Structure that fits your needs, Worst Case Scenario gives you the performance of a Data Structure at it's very worst, meaning the worst it could possibly get depending on the input given it. If it has a fast speed in Worst Case Scenario, it's usually a safe bet. However, this shouldn't be the only thing that determines your choice of data structure.
-
-
-## Examples of when to use certain data strucutres...

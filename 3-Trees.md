@@ -152,11 +152,11 @@ class BST:
      
             # If the left Node is empty, add the data here.
                 
-            else:
+            elif:
   
                 #Use Recursion to call the function again to the left Node.
                 
-            else:
+            elif:
    
                 #Else add to the right Node.
                 

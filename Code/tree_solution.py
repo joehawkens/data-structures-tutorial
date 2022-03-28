@@ -1,7 +1,5 @@
 ``` Python
 
-``` Python
-
 class BST:
 
 

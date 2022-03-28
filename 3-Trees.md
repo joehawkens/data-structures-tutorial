@@ -150,20 +150,19 @@ class BST:
 
         if data < node.data:
      
-            if node.left is None:
- 
-                node.left = BST.Node(data)
+            # If the left Node is empty, add the data here.
                 
             else:
   
-                self._insert(data, node.left)
+                #Use Recursion to call the function again to the left Node.
+                
             else:
    
-                node.right = BST.Node(data)
+                #Else add to the right Node.
+                
             else:
                 
-                # RECURSION (calling the function on itself)
-                self._insert(data, node.right)
+                # Use Recursion to call the function against the right Node.
 
 ```
 

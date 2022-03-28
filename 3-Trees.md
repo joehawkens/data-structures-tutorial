@@ -110,7 +110,7 @@ Access | Search | Insertion | Deletion |
 
 ![Visual Diagram of Recursion](https://github.com/joehawkens/data-structures-final/blob/main/Assets/RecursionDiagram.PNG)
 
-### Recursion is an important concept to understand with BSTs because they are implemented within them. You'll see this in the practice problem below:
+### Recursion is an important concept to understand with BSTs because they are implemented within them. The reason for this is because Recursion is a quick way to iterate through the Binary Search Tree. Calling a function on itself so it can traverse the tree to find, delete, or insert data is more common than using a simple loop. You'll see this in the practice problem below:
 
 
 ## Now that you have an idea of the what and how, let's jump right into a practice problem. Your goal will be to add data to the BST. Reference the example above for hints on how to accomplish this method within the BST class.

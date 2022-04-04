@@ -8,6 +8,8 @@
 
 
 ### Before the tutorials there is a primer on computer memory and a few other key topics to understand before you dive in...
+### [Primer](https://github.com/joehawkens/data-structures-final/blob/main/0-primer.md)
+
 
 ## Each tutorial module will be split into five parts:
 

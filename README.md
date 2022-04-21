@@ -22,5 +22,4 @@
 
 ---
 ### For any questions contact Joseph Hawkins
-### Class: CSE-212, Section 4
 ### Email: hawkins@byui.edu 

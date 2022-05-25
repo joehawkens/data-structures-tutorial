@@ -1,4 +1,4 @@
-# Algorithms and Data Structures Final
+# Algorithms and Data Structures
 
 ## This repository contains a tutorial on the three following data structures:
 

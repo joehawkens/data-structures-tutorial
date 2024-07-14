@@ -21,5 +21,4 @@
 ### 5. Incomplete example code problem
 
 ---
-### For any questions contact Joe Hawkins
-### Email: hawkins@byui.edu 
+
